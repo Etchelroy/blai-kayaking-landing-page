@@ -663,3 +663,263 @@ RUN: open index.html
           </div>
 
         
+DEPS: none
+RUN: open index.html
+
+```html
+<!-- filename: index.html (part 2 - append after closing accordion div) -->
+        </div><!-- end .accordion -->
+      </div><!-- end .faq-container -->
+    </section>
+
+    <!-- âââââââââââââââââââ BOOKING / CONTACT âââââââââââââââââââ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+
+        <div class="contact-form-col">
+          <span class="section-label">Get in Touch</span>
+          <h2 id="contact-heading" class="section-title" id="booking">Book Your Experience</h2>
+          <p class="contact-intro">Fill out the form below and we'll confirm your spot within 2 hours during business hours (9amâ6pm daily).</p>
+
+          <form class="booking-form" id="bookingForm" novalidate aria-label="Tour booking form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bf-fname" class="form-label">First Name <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="bf-fname"
+                  name="firstName"
+                  class="form-input"
+                  placeholder="Jane"
+                  autocomplete="given-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-fname-error"
+                />
+                <span id="bf-fname-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="bf-lname" class="form-label">Last Name <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="bf-lname"
+                  name="lastName"
+                  class="form-input"
+                  placeholder="Smith"
+                  autocomplete="family-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-lname-error"
+                />
+                <span id="bf-lname-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bf-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="bf-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="jane@example.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-email-error"
+                />
+                <span id="bf-email-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="bf-phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  id="bf-phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+1 (555) 000-1234"
+                  autocomplete="tel"
+                  aria-describedby="bf-phone-hint"
+                />
+                <span id="bf-phone-hint" class="form-hint">Optional â for same-day communication</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bf-tour" class="form-label">Select Tour <span class="required" aria-hidden="true">*</span></label>
+                <select
+                  id="bf-tour"
+                  name="tour"
+                  class="form-input form-select"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-tour-error"
+                >
+                  <option value="" disabled selected>Choose a tourâ¦</option>
+                  <option value="sunrise">Sunrise Lake Tour â $49/person</option>
+                  <option value="canyon">Canyon Rapids Expedition â $129/person</option>
+                  <option value="coastal">Coastal Sea Kayaking â $89/person</option>
+                  <option value="moonlight">Full Moon Night Paddle â $79/person</option>
+                  <option value="private">Private / Corporate Group</option>
+                </select>
+                <span id="bf-tour-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="bf-guests" class="form-label">Number of Guests <span class="required" aria-hidden="true">*</span></label>
+                <select
+                  id="bf-guests"
+                  name="guests"
+                  class="form-input form-select"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-guests-error"
+                >
+                  <option value="" disabled selected>How many?</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="5">5 guests</option>
+                  <option value="6">6 guests</option>
+                  <option value="7">7 guests</option>
+                  <option value="8">8 guests</option>
+                  <option value="9+">9+ guests (we'll call you)</option>
+                </select>
+                <span id="bf-guests-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bf-date" class="form-label">Preferred Date <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="date"
+                  id="bf-date"
+                  name="date"
+                  class="form-input"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-date-error"
+                />
+                <span id="bf-date-error" class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="bf-experience" class="form-label">Experience Level</label>
+                <select id="bf-experience" name="experience" class="form-input form-select">
+                  <option value="" disabled selected>Select levelâ¦</option>
+                  <option value="none">No experience</option>
+                  <option value="beginner">Beginner (1â2 times)</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced / Expert</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bf-message" class="form-label">Additional Notes</label>
+              <textarea
+                id="bf-message"
+                name="message"
+                class="form-input form-textarea"
+                rows="4"
+                placeholder="Dietary requirements, accessibility needs, special requestsâ¦"
+                aria-describedby="bf-message-hint"
+              ></textarea>
+              <span id="bf-message-hint" class="form-hint">Max 500 characters</span>
+            </div>
+
+            <div class="form-group form-checkbox-group">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="bf-terms"
+                  name="terms"
+                  class="checkbox-input"
+                  required
+                  aria-required="true"
+                  aria-describedby="bf-terms-error"
+                />
+                <span class="checkbox-custom" aria-hidden="true"></span>
+                I agree to the <a href="#" class="link">Terms & Conditions</a> and <a href="#" class="link">Cancellation Policy</a>
+              </label>
+              <span id="bf-terms-error" class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              Request Booking
+            </button>
+
+            <div id="bf-success" class="form-success" role="alert" aria-live="polite" hidden>
+              ð Booking request received! We'll confirm your spot within 2 hours.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Contact info + map -->
+        <div class="contact-info-col">
+          <div class="contact-details">
+            <h3 class="contact-details-title">Find Us</h3>
+
+            <ul class="contact-list" aria-label="Contact information">
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">ð</span>
+                <div>
+                  <strong>Launch Point</strong>
+                  <address>142 Waterfront Drive<br />Harborview, CA 94901</address>
+                </div>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">ð</span>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+15550001234" class="contact-link">+1 (555) 000-1234</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">âï¸</span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:hello@wildwaterkayaking.com" class="contact-link">hello@wildwaterkayaking.com</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon" aria-hidden="true">ð</span>
+                <div>
+                  <strong>Hours</strong>
+                  <span>Daily 7:00 AM â 7:00 PM<br />Tours run April â October</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Google Maps embed -->
+          <div class="map-wrap">
+            <iframe
+              title="WildWater Kayaking location on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d-122.41941548468143!3d37.77492977975853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b8b9e895%3A0xa1ed7f59b1fc3c3a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1614000000000!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Map showing WildWater Kayaking launch point location"
+            ></iframe>
+          </div>
+
+          <!-- Social links -->
+          <div class="social-links">
+            <h3 class="social-title">Follow Our Adventures</h3>
+            <div class="social-icons" role="list">
+              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on Instagram" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on Facebook" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on YouTube" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.
