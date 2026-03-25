@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WildWater Kayaking â Adventure Awaits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- âââââââââââââââââ NAVIGATION âââââââââââââââââ -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#" class="logo" aria-label="WildWater Kayaking â home">
+        <span class="logo-icon" aria-hidden="true">ð¶</span>
+        <span class="logo-text">WildWater</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+        <span class="hamburger" aria-hidden="true"></span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#experiences" class="nav-link">Experiences</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#booking" class="nav-cta btn btn-primary">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- âââââââââââââââââ HERO âââââââââââââââââ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <span class="hero-badge">ð Season Now Open</span>
+        <h1 id="hero-heading" class="hero-title">
+          Paddle Into Your<br />
+          <span class="hero-accent">Next Adventure</span>
+        </h1>
+        <p class="hero-subtitle">
+          World-class kayaking tours through breathtaking waterways. Expert guides, premium gear, unforgettable memories.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary btn-lg">Book an Experience</a>
+          <a href="#experiences" class="btn btn-outline btn-lg">Explore Tours</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Quick stats">
+          <div class="hero-stat" role="listitem">
+            <strong>2,400+</strong><span>Happy Paddlers</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat" role="listitem">
+            <strong>12+</strong><span>Unique Routes</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat" role="listitem">
+            <strong>98%</strong><span>5-Star Reviews</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="scroll-indicator"></span>
+      </div>
+    </section>
+
+    <!-- âââââââââââââââââ EXPERIENCES âââââââââââââââââ -->
+    <section class="section experiences" id="experiences" aria-labelledby="experiences-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What We Offer</span>
+          <h2 id="experiences-heading" class="section-title">Choose Your Adventure</h2>
+          <p class="section-subtitle">From calm sunrise paddles to heart-pumping rapids â we have an experience for every skill level.</p>
+        </div>
+
+        <div class="cards-grid" role="list">
+
+          <article class="card" role="listitem" aria-labelledby="card1-title">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80"
+                alt="Two kayakers paddling on a calm sunrise lake surrounded by mountains"
+                class="card-image"
+                loading="lazy"
+                width="600" height="400"
+              />
+              <span class="card-badge card-badge--easy">Beginner</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-meta-item">â± 2 Hours</span>
+                <span class="card-meta-item">ð¥ 2â8 People</span>
+              </div>
+              <h3 id="card1-title" class="card-title">Sunrise Lake Tour</h3>
+              <p class="card-desc">Glide across mirror-still waters as the sun rises over the mountains. Perfect for beginners and families looking for a serene first paddle.</p>
+              <div class="card-footer">
+                <span class="card-price"><strong>$49</strong> / person</span>
+                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Sunrise Lake Tour">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--featured" role="listitem" aria-labelledby="card2-title">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=600&q=80"
+                alt="Kayaker navigating white water rapids through a narrow canyon gorge"
+                class="card-image"
+                loading="lazy"
+                width="600" height="400"
+              />
+              <span class="card-badge card-badge--hard">Advanced</span>
+              <span class="card-badge card-badge--popular">Most Popular</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-meta-item">â± 5 Hours</span>
+                <span class="card-meta-item">ð¥ 2â6 People</span>
+              </div>
+              <h3 id="card2-title" class="card-title">Canyon Rapids Expedition</h3>
+              <p class="card-desc">Tackle Class IIIâIV rapids through dramatic canyon walls. A full-day adrenaline rush with certified guides and all safety equipment provided.</p>
+              <div class="card-footer">
+                <span class="card-price"><strong>$129</strong> / person</span>
+                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Canyon Rapids Expedition">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="card3-title">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=600&q=80"
+                alt="Group of kayakers paddling along a coastal sea route with sea cliffs"
+                class="card-image"
+                loading="lazy"
+                width="600" height="400"
+              />
+              <span class="card-badge card-badge--medium">Intermediate</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-meta-item">â± 3 Hours</span>
+                <span class="card-meta-item">ð¥ 4â10 People</span>
+              </div>
+              <h3 id="card3-title" class="card-title">Coastal Sea Kayaking</h3>
+              <p class="card-desc">Explore hidden sea caves, dramatic cliffs, and marine wildlife along our stunning coastline. Includes a beach lunch stop and snorkelling gear.</p>
+              <div class="card-footer">
+                <span class="card-price"><strong>$89</strong> / person</span>
+                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Coastal Sea Kayaking">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="card4-title">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80"
+                alt="Full moon reflected on calm river water during a night kayaking tour"
+                class="card-image"
+                loading="lazy"
+                width="600" height="400"
+              />
+              <span class="card-badge card-badge--medium">Intermediate</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-meta-item">â± 2.5 Hours</span>
+                <span class="card-meta-item">ð¥ 2â8 People</span>
+              </div>
+              <h3 id="card4-title" class="card-title">Full Moon Night Paddle</h3>
+              <p class="card-desc">Experience the magic of glowing bioluminescent waters under the moonlight. Available select nights each month â sells out fast!</p>
+              <div class="card-footer">
+                <span class="card-price"><strong>$79</strong> / person</span>
+                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Full Moon Night Paddle">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- âââââââââââââââââ ABOUT / STATS âââââââââââââââââ -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-image-col">
+          <div class="about-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=700&q=80"
+              alt="Professional kayak guide smiling and giving a thumbs up while wearing a life jacket on calm blue water"
+              class="about-image"
+              loading="lazy"
+              width="700" height="500"
+            />
+            <div class="about-badge-card" aria-label="Founded in 2009">
+              <span class="about-badge-num">15+</span>
+              <span class="about-badge-label">Years of Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <span class="section-label">Who We Are</span>
+          <h2 id="about-heading" class="section-title">Guides Who Live<br />to Paddle</h2>
+          <p class="about-text">WildWater Kayaking was founded in 2009 by a team of passionate paddlers who wanted to share the transformative power of time on the water. Every guide is certified by the American Canoe Association and has hundreds of hours on the specific waters they lead.</p>
+          <p class="about-text">We're committed to small group sizes, sustainable practices, and making sure every guest â beginner or expert â leaves with a giant smile and a story to tell.</p>
+
+          <ul class="about-features" aria-label="Key features">
+            <li class="about-feature">
+              <span class="feature-icon" aria-hidden="true">â</span>
+              <span>ACA-certified guides on every tour</span>
+            </li>
+            <li class="about-feature">
+              <span class="feature-icon" aria-hidden="true">â</span>
+              <span>Premium Werner paddles & PFDs provided</span>
+            </li>
+            <li class="about-feature">
+              <span class="feature-icon" aria-hidden="true">â</span>
+              <span>Max 10 guests per guide for safety</span>
+            </li>
+            <li class="about-feature">
+              <span class="feature-icon" aria-hidden="true">â</span>
+              <span>Full refund 48 hours before departure</span>
+            </li>
+          </ul>
+
+          <a href="#booking" class="btn btn-primary">Reserve Your Spot</a>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar" role="list" aria-label="Company statistics">
+        <div class="stat-item" role="listitem">
+          <strong class="stat-num" data-target="2400">0</strong>
+          <span class="stat-label">Paddlers Guided</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <strong class="stat-num" data-target="12">0</strong>
+          <span class="stat-label">Unique Routes</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <strong class="stat-num" data-target="98">0</strong>
+          <span class="stat-label">% 5-Star Reviews</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <strong class="stat-num" data-target="15">0</strong>
+          <span class="stat-label">Years Running</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- âââââââââââââââââ MID-PAGE CTA âââââââââââââââââ -->
+    <section class="section cta-band" aria-labelledby="cta-heading">
+      <div class="container cta-band-inner">
+        <div>
+          <h2 id="cta-heading" class="cta-title">Ready to Get on the Water?</h2>
+          <p class="cta-subtitle">Spots fill up fast â especially on weekends. Secure yours today.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#booking" class="btn btn-white btn-lg">Book Today</a>
+          <a href="tel:+15550001234" class="btn btn-outline-white btn-lg">ð Call Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- âââââââââââââââââ TESTIMONIALS âââââââââââââââââ -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Happy Paddlers</span>
+          <h2 id="testimonials-heading" class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonials-grid" role="list">
+
+          <article class="testimonial-card" role="listitem">
+            <div class="stars" aria-label="5 out of
