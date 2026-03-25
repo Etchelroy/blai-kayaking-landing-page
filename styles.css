@@ -761,3 +761,339 @@ section h2 {
     display: flex;
     gap: var(--spacing-lg);
     
+```css
+    margin-top: var(--spacing-lg);
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.contact-map {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: var(--color-dark);
+    color: white;
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-section p {
+    color: #d1d5db;
+    font-size: 0.95rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-section a {
+    color: #d1d5db;
+    transition: var(--transition);
+}
+
+.footer-section a:hover {
+    color: var(--color-primary);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet: 640px */
+@media (min-width: 640px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo-text {
+        display: inline;
+    }
+
+    .tours-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter-form {
+        flex-direction: row;
+        gap: var(--spacing-sm);
+    }
+
+    .newsletter-form input {
+        flex: 1;
+    }
+
+    .newsletter-form button {
+        flex-shrink: 0;
+    }
+}
+
+/* Desktop: 1024px */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .mobile-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+
+    .tours-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr 1.2fr;
+        align-items: start;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile Menu Hidden by Default */
+@media (max-width: 1023px) {
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding: var(--spacing-lg);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid var(--color-border);
+        padding: var(--spacing-md) 0;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-cta {
+        width: 100%;
+        text-align: center;
+        padding: var(--spacing-md) var(--spacing-lg) !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero,
+    .newsletter-section,
+    .footer {
+        display: none;
+    }
+
+    body {
+        color: black;
+        background-color: white;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: more) {
+    --color-primary: #0250a3;
+    --color-secondary: #d64704;
+    --color-dark: #000000;
+
+    .tour-card {
+        border: 2px solid var(--color-dark);
+    }
+
+    .faq-question {
+        border: 2px solid var(--color-dark);
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e5e7eb;
+    }
+
+    .navbar {
+        background-color: #0f172a;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .tour-card,
+    .testimonial,
+    .booking-form {
+        background-color: #1f2937;
+        color: #e5e7eb;
+    }
+
+    .tour-info h3,
+    .faq-question {
+        color: #e5e7eb;
+    }
+
+    .description,
+    .quote,
+    .section-intro {
+        color: #d1d5db;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background-color: #111827;
+        color: #e5e7eb;
+        border-color: #374151;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        background-color: #1e3a5f;
+        border-color: var(--color-primary);
+    }
+
+    .faq-question:hover {
+        background-color: #374151;
+    }
+
+    .faq-question[aria-expanded="true"] {
+        background-color: #374151;
+    }
+
+    .faq-answer {
+        background-color: #111827;
+        color: #d1d5db;
+    }
+
+    .tours-section,
+    .newsletter-section,
+    .contact-section {
+        background-color: #0f172a;
+    }
+
+    .about-section {
+        background-color: #1a1a1a;
+    }
+}
