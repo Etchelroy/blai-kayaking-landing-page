@@ -1,995 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WildWater Kayaking â Adventure Awaits</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureFlow Kayaking - Book Your Next Adventure</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-  <!-- Skip to content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- âââââââââââââââââ NAVIGATION âââââââââââââââââ -->
-  <header class="site-header" role="banner">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a href="#" class="logo" aria-label="WildWater Kayaking â home">
-        <span class="logo-icon" aria-hidden="true">ð¶</span>
-        <span class="logo-text">WildWater</span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span class="hamburger" aria-hidden="true"></span>
-        <span class="hamburger" aria-hidden="true"></span>
-        <span class="hamburger" aria-hidden="true"></span>
-      </button>
-
-      <ul class="nav-menu" id="navMenu" role="list">
-        <li><a href="#experiences" class="nav-link">Experiences</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-        <li><a href="#faq" class="nav-link">FAQ</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="#booking" class="nav-cta btn btn-primary">Book Now</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main-content">
-
-    <!-- âââââââââââââââââ HERO âââââââââââââââââ -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-content container">
-        <span class="hero-badge">ð Season Now Open</span>
-        <h1 id="hero-heading" class="hero-title">
-          Paddle Into Your<br />
-          <span class="hero-accent">Next Adventure</span>
-        </h1>
-        <p class="hero-subtitle">
-          World-class kayaking tours through breathtaking waterways. Expert guides, premium gear, unforgettable memories.
-        </p>
-        <div class="hero-actions">
-          <a href="#booking" class="btn btn-primary btn-lg">Book an Experience</a>
-          <a href="#experiences" class="btn btn-outline btn-lg">Explore Tours</a>
-        </div>
-        <div class="hero-stats" role="list" aria-label="Quick stats">
-          <div class="hero-stat" role="listitem">
-            <strong>2,400+</strong><span>Happy Paddlers</span>
-          </div>
-          <div class="hero-stat-divider" aria-hidden="true"></div>
-          <div class="hero-stat" role="listitem">
-            <strong>12+</strong><span>Unique Routes</span>
-          </div>
-          <div class="hero-stat-divider" aria-hidden="true"></div>
-          <div class="hero-stat" role="listitem">
-            <strong>98%</strong><span>5-Star Reviews</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-scroll" aria-hidden="true">
-        <span class="scroll-indicator"></span>
-      </div>
-    </section>
-
-    <!-- âââââââââââââââââ EXPERIENCES âââââââââââââââââ -->
-    <section class="section experiences" id="experiences" aria-labelledby="experiences-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">What We Offer</span>
-          <h2 id="experiences-heading" class="section-title">Choose Your Adventure</h2>
-          <p class="section-subtitle">From calm sunrise paddles to heart-pumping rapids â we have an experience for every skill level.</p>
-        </div>
-
-        <div class="cards-grid" role="list">
-
-          <article class="card" role="listitem" aria-labelledby="card1-title">
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80"
-                alt="Two kayakers paddling on a calm sunrise lake surrounded by mountains"
-                class="card-image"
-                loading="lazy"
-                width="600" height="400"
-              />
-              <span class="card-badge card-badge--easy">Beginner</span>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">ð¶</span>
+                <span class="logo-text">AdventureFlow</span>
             </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span class="card-meta-item">â± 2 Hours</span>
-                <span class="card-meta-item">ð¥ 2â8 People</span>
-              </div>
-              <h3 id="card1-title" class="card-title">Sunrise Lake Tour</h3>
-              <p class="card-desc">Glide across mirror-still waters as the sun rises over the mountains. Perfect for beginners and families looking for a serene first paddle.</p>
-              <div class="card-footer">
-                <span class="card-price"><strong>$49</strong> / person</span>
-                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Sunrise Lake Tour">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card card--featured" role="listitem" aria-labelledby="card2-title">
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=600&q=80"
-                alt="Kayaker navigating white water rapids through a narrow canyon gorge"
-                class="card-image"
-                loading="lazy"
-                width="600" height="400"
-              />
-              <span class="card-badge card-badge--hard">Advanced</span>
-              <span class="card-badge card-badge--popular">Most Popular</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span class="card-meta-item">â± 5 Hours</span>
-                <span class="card-meta-item">ð¥ 2â6 People</span>
-              </div>
-              <h3 id="card2-title" class="card-title">Canyon Rapids Expedition</h3>
-              <p class="card-desc">Tackle Class IIIâIV rapids through dramatic canyon walls. A full-day adrenaline rush with certified guides and all safety equipment provided.</p>
-              <div class="card-footer">
-                <span class="card-price"><strong>$129</strong> / person</span>
-                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Canyon Rapids Expedition">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="card3-title">
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=600&q=80"
-                alt="Group of kayakers paddling along a coastal sea route with sea cliffs"
-                class="card-image"
-                loading="lazy"
-                width="600" height="400"
-              />
-              <span class="card-badge card-badge--medium">Intermediate</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span class="card-meta-item">â± 3 Hours</span>
-                <span class="card-meta-item">ð¥ 4â10 People</span>
-              </div>
-              <h3 id="card3-title" class="card-title">Coastal Sea Kayaking</h3>
-              <p class="card-desc">Explore hidden sea caves, dramatic cliffs, and marine wildlife along our stunning coastline. Includes a beach lunch stop and snorkelling gear.</p>
-              <div class="card-footer">
-                <span class="card-price"><strong>$89</strong> / person</span>
-                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Coastal Sea Kayaking">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="card4-title">
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80"
-                alt="Full moon reflected on calm river water during a night kayaking tour"
-                class="card-image"
-                loading="lazy"
-                width="600" height="400"
-              />
-              <span class="card-badge card-badge--medium">Intermediate</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <span class="card-meta-item">â± 2.5 Hours</span>
-                <span class="card-meta-item">ð¥ 2â8 People</span>
-              </div>
-              <h3 id="card4-title" class="card-title">Full Moon Night Paddle</h3>
-              <p class="card-desc">Experience the magic of glowing bioluminescent waters under the moonlight. Available select nights each month â sells out fast!</p>
-              <div class="card-footer">
-                <span class="card-price"><strong>$79</strong> / person</span>
-                <a href="#booking" class="btn btn-primary btn-sm" aria-label="Book Full Moon Night Paddle">Book Now</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- âââââââââââââââââ ABOUT / STATS âââââââââââââââââ -->
-    <section class="section about" id="about" aria-labelledby="about-heading">
-      <div class="container about-grid">
-        <div class="about-image-col">
-          <div class="about-image-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=700&q=80"
-              alt="Professional kayak guide smiling and giving a thumbs up while wearing a life jacket on calm blue water"
-              class="about-image"
-              loading="lazy"
-              width="700" height="500"
-            />
-            <div class="about-badge-card" aria-label="Founded in 2009">
-              <span class="about-badge-num">15+</span>
-              <span class="about-badge-label">Years of Experience</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-content-col">
-          <span class="section-label">Who We Are</span>
-          <h2 id="about-heading" class="section-title">Guides Who Live<br />to Paddle</h2>
-          <p class="about-text">WildWater Kayaking was founded in 2009 by a team of passionate paddlers who wanted to share the transformative power of time on the water. Every guide is certified by the American Canoe Association and has hundreds of hours on the specific waters they lead.</p>
-          <p class="about-text">We're committed to small group sizes, sustainable practices, and making sure every guest â beginner or expert â leaves with a giant smile and a story to tell.</p>
-
-          <ul class="about-features" aria-label="Key features">
-            <li class="about-feature">
-              <span class="feature-icon" aria-hidden="true">â</span>
-              <span>ACA-certified guides on every tour</span>
-            </li>
-            <li class="about-feature">
-              <span class="feature-icon" aria-hidden="true">â</span>
-              <span>Premium Werner paddles & PFDs provided</span>
-            </li>
-            <li class="about-feature">
-              <span class="feature-icon" aria-hidden="true">â</span>
-              <span>Max 10 guests per guide for safety</span>
-            </li>
-            <li class="about-feature">
-              <span class="feature-icon" aria-hidden="true">â</span>
-              <span>Full refund 48 hours before departure</span>
-            </li>
-          </ul>
-
-          <a href="#booking" class="btn btn-primary">Reserve Your Spot</a>
-        </div>
-      </div>
-
-      <!-- Stats bar -->
-      <div class="stats-bar" role="list" aria-label="Company statistics">
-        <div class="stat-item" role="listitem">
-          <strong class="stat-num" data-target="2400">0</strong>
-          <span class="stat-label">Paddlers Guided</span>
-        </div>
-        <div class="stat-item" role="listitem">
-          <strong class="stat-num" data-target="12">0</strong>
-          <span class="stat-label">Unique Routes</span>
-        </div>
-        <div class="stat-item" role="listitem">
-          <strong class="stat-num" data-target="98">0</strong>
-          <span class="stat-label">% 5-Star Reviews</span>
-        </div>
-        <div class="stat-item" role="listitem">
-          <strong class="stat-num" data-target="15">0</strong>
-          <span class="stat-label">Years Running</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- âââââââââââââââââ MID-PAGE CTA âââââââââââââââââ -->
-    <section class="section cta-band" aria-labelledby="cta-heading">
-      <div class="container cta-band-inner">
-        <div>
-          <h2 id="cta-heading" class="cta-title">Ready to Get on the Water?</h2>
-          <p class="cta-subtitle">Spots fill up fast â especially on weekends. Secure yours today.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="#booking" class="btn btn-white btn-lg">Book Today</a>
-          <a href="tel:+15550001234" class="btn btn-outline-white btn-lg">ð Call Us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- âââââââââââââââââ TESTIMONIALS âââââââââââââââââ -->
-    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Happy Paddlers</span>
-          <h2 id="testimonials-heading" class="section-title">What Our Guests Say</h2>
-        </div>
-
-        <div class="testimonials-grid" role="list">
-
-          <article class="testimonial-card" role="listitem">
-            <div class="stars" aria-label="5 out of
-DEPS: none
-RUN: open index.html
-
-```html
-<!-- filename: index.html (continued) -->
-            5 stars">âââââ</div>
-            <blockquote class="testimonial-quote">
-              <p>"The Canyon Rapids Expedition was the most thrilling experience of my life. Our guide Jake was incredible â professional, funny, and made us feel safe the entire time. Already booked again for next summer!"</p>
-            </blockquote>
-            <footer class="testimonial-author">
-              <img
-                src="https://i.pravatar.cc/64?img=11"
-                alt="Portrait of Sarah M."
-                class="testimonial-avatar"
-                width="48" height="48"
-                loading="lazy"
-              />
-              <div>
-                <strong class="testimonial-name">Sarah M.</strong>
-                <span class="testimonial-location">Portland, OR</span>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial-card" role="listitem">
-            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
-            <blockquote class="testimonial-quote">
-              <p>"Brought my 10-year-old on the Sunrise Lake Tour and it was perfect. Patient guides, gorgeous scenery, and my kid hasn't stopped talking about it. Worth every penny."</p>
-            </blockquote>
-            <footer class="testimonial-author">
-              <img
-                src="https://i.pravatar.cc/64?img=32"
-                alt="Portrait of Marcus T."
-                class="testimonial-avatar"
-                width="48" height="48"
-                loading="lazy"
-              />
-              <div>
-                <strong class="testimonial-name">Marcus T.</strong>
-                <span class="testimonial-location">Seattle, WA</span>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial-card" role="listitem">
-            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
-            <blockquote class="testimonial-quote">
-              <p>"The Full Moon Night Paddle was absolutely magical. Bioluminescent water glowing around my paddle â I honestly thought I was dreaming. Book this. Just do it."</p>
-            </blockquote>
-            <footer class="testimonial-author">
-              <img
-                src="https://i.pravatar.cc/64?img=47"
-                alt="Portrait of Priya K."
-                class="testimonial-avatar"
-                width="48" height="48"
-                loading="lazy"
-              />
-              <div>
-                <strong class="testimonial-name">Priya K.</strong>
-                <span class="testimonial-location">San Francisco, CA</span>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial-card" role="listitem">
-            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
-            <blockquote class="testimonial-quote">
-              <p>"Coastal Sea Kayaking exceeded every expectation. We paddled through sea caves, spotted seals, and had a beachside lunch. The WildWater team clearly loves what they do."</p>
-            </blockquote>
-            <footer class="testimonial-author">
-              <img
-                src="https://i.pravatar.cc/64?img=59"
-                alt="Portrait of Daniel R."
-                class="testimonial-avatar"
-                width="48" height="48"
-                loading="lazy"
-              />
-              <div>
-                <strong class="testimonial-name">Daniel R.</strong>
-                <span class="testimonial-location">Austin, TX</span>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial-card" role="listitem">
-            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
-            <blockquote class="testimonial-quote">
-              <p>"I was nervous as a complete beginner but the guides were so encouraging. By the end of the Sunrise Tour I felt like a pro. Fantastic organisation, great safety briefing."</p>
-            </blockquote>
-            <footer class="testimonial-author">
-              <img
-                src="https://i.pravatar.cc/64?img=25"
-                alt="Portrait of Elena W."
-                class="testimonial-avatar"
-                width="48" height="48"
-                loading="lazy"
-              />
-              <div>
-                <strong class="testimonial-name">Elena W.</strong>
-                <span class="testimonial-location">Chicago, IL</span>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial-card" role="listitem">
-            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
-            <blockquote class="testimonial-quote">
-              <p>"Corporate team-building done right. Booked the Coastal tour for 16 colleagues and WildWater handled everything flawlessly. Everyone left energised and bonded. Highly recommend."</p>
-            </blockquote>
-            <footer class="testimonial-author">
-              <img
-                src="https://i.pravatar.cc/64?img=68"
-                alt="Portrait of James O."
-                class="testimonial-avatar"
-                width="48" height="48"
-                loading="lazy"
-              />
-              <div>
-                <strong class="testimonial-name">James O.</strong>
-                <span class="testimonial-location">New York, NY</span>
-              </div>
-            </footer>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- âââââââââââââââââââ NEWSLETTER âââââââââââââââââââ -->
-    <section class="section newsletter" aria-labelledby="newsletter-heading">
-      <div class="container newsletter-inner">
-        <div class="newsletter-text">
-          <span class="section-label">Stay in the Loop</span>
-          <h2 id="newsletter-heading" class="section-title">Get Deals & Paddle News</h2>
-          <p>Early-bird discounts, new route announcements, and seasonal offers â straight to your inbox. No spam, ever.</p>
-        </div>
-        <form class="newsletter-form" id="newsletterForm" novalidate aria-label="Newsletter sign-up form">
-          <div class="newsletter-fields">
-            <div class="form-group">
-              <label for="nl-email" class="form-label">Email address</label>
-              <input
-                type="email"
-                id="nl-email"
-                name="email"
-                class="form-input"
-                placeholder="you@example.com"
-                autocomplete="email"
-                required
-                aria-required="true"
-                aria-describedby="nl-email-error"
-              />
-              <span id="nl-email-error" class="form-error" role="alert" aria-live="polite"></span>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg newsletter-btn">Subscribe</button>
-          </div>
-          <p class="newsletter-privacy">
-            <small>We respect your privacy. Unsubscribe at any time.</small>
-          </p>
-          <div id="nl-success" class="form-success" role="alert" aria-live="polite" hidden>
-            ð You're on the list! Watch your inbox for exclusive deals.
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- âââââââââââââââââââ FAQ âââââââââââââââââââ -->
-    <section class="section faq" id="faq" aria-labelledby="faq-heading">
-      <div class="container faq-container">
-        <div class="section-header">
-          <span class="section-label">Got Questions?</span>
-          <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
-        </div>
-
-        <div class="accordion" id="faqAccordion">
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq1-panel"
-                id="faq1-btn"
-              >
-                Do I need kayaking experience to join a tour?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq1-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq1-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>Not at all! Our Sunrise Lake Tour and Coastal Sea Kayaking are perfectly suited for first-timers. Every tour begins with a comprehensive on-shore safety briefing and paddling technique demonstration. Our guides will have you feeling confident on the water within minutes.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq2-panel"
-                id="faq2-btn"
-              >
-                What should I wear and bring?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq2-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq2-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>Wear quick-dry clothing and water shoes or sandals with straps. Bring sunscreen, sunglasses with a retainer strap, a water bottle, and a light snack. We provide all paddling equipment â kayak, paddle, PFD (life jacket), and a dry bag for your valuables. Avoid cotton clothing as it stays wet and cold.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq3-panel"
-                id="faq3-btn"
-              >
-                What is your cancellation policy?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq3-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq3-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>We offer a <strong>full refund</strong> for cancellations made 48+ hours before your tour departure. Cancellations within 24â48 hours receive a 50% credit toward a future booking. No-shows and cancellations under 24 hours are non-refundable. We will always reschedule at no charge if we cancel due to unsafe weather conditions.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq4-panel"
-                id="faq4-btn"
-              >
-                Are children allowed on tours?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq4-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq4-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>Children aged 6 and up are welcome on the Sunrise Lake Tour in tandem kayaks with a parent or guardian. The Coastal Sea Kayaking tour is suitable for ages 12 and up. The Canyon Rapids Expedition requires participants to be 16+ and have prior kayaking experience. All children must have a signed parental consent form.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq5-panel"
-                id="faq5-btn"
-              >
-                What happens if the weather is bad?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq5-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq5-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>Safety is our top priority. Our guides monitor weather conditions closely up to 48 hours before each tour. Light rain rarely stops us â paddling in drizzle can be magical! However, if we deem conditions unsafe (high winds, lightning, dangerous water levels), we will cancel and offer you a full refund or a free reschedule to any available date.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq6-panel"
-                id="faq6-btn"
-              >
-                How many people are in each tour group?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq6-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq6-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>We keep group sizes intentionally small for a better experience and higher safety standards. Most tours have a maximum of 8â10 guests per guide. Private and semi-private tours are also available for couples, families, or corporate groups â contact us for custom pricing and availability.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq7-panel"
-                id="faq7-btn"
-              >
-                Do you offer private or corporate group tours?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq7-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq7-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>Absolutely! We specialise in private bookings for birthdays, bachelorette parties, corporate team-building events, and school groups. Private tours can be fully customised â route, duration, catering, and photography add-ons are all available. Reach out via our contact form or call us to discuss your requirements.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-btn"
-                aria-expanded="false"
-                aria-controls="faq8-panel"
-                id="faq8-btn"
-              >
-                Where do tours depart from?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div
-              id="faq8-panel"
-              class="accordion-panel"
-              role="region"
-              aria-labelledby="faq8-btn"
-              hidden
-            >
-              <div class="accordion-body">
-                <p>All tours depart from our main launch point at <strong>Harborview Kayak Center, 142 Waterfront Drive</strong>. Free parking is available on-site. We recommend arriving 20 minutes before your scheduled tour time to complete check-in and the safety briefing. The address is pinned on the map below.</p>
-              </div>
-            </div>
-          </div>
-
-        
-DEPS: none
-RUN: open index.html
-
-```html
-<!-- filename: index.html (part 2 - append after closing accordion div) -->
-        </div><!-- end .accordion -->
-      </div><!-- end .faq-container -->
-    </section>
-
-    <!-- âââââââââââââââââââ BOOKING / CONTACT âââââââââââââââââââ -->
-    <section class="section contact" id="contact" aria-labelledby="contact-heading">
-      <div class="container contact-grid">
-
-        <div class="contact-form-col">
-          <span class="section-label">Get in Touch</span>
-          <h2 id="contact-heading" class="section-title" id="booking">Book Your Experience</h2>
-          <p class="contact-intro">Fill out the form below and we'll confirm your spot within 2 hours during business hours (9amâ6pm daily).</p>
-
-          <form class="booking-form" id="bookingForm" novalidate aria-label="Tour booking form">
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="bf-fname" class="form-label">First Name <span class="required" aria-hidden="true">*</span></label>
-                <input
-                  type="text"
-                  id="bf-fname"
-                  name="firstName"
-                  class="form-input"
-                  placeholder="Jane"
-                  autocomplete="given-name"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-fname-error"
-                />
-                <span id="bf-fname-error" class="form-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="bf-lname" class="form-label">Last Name <span class="required" aria-hidden="true">*</span></label>
-                <input
-                  type="text"
-                  id="bf-lname"
-                  name="lastName"
-                  class="form-input"
-                  placeholder="Smith"
-                  autocomplete="family-name"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-lname-error"
-                />
-                <span id="bf-lname-error" class="form-error" role="alert" aria-live="polite"></span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="bf-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
-                <input
-                  type="email"
-                  id="bf-email"
-                  name="email"
-                  class="form-input"
-                  placeholder="jane@example.com"
-                  autocomplete="email"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-email-error"
-                />
-                <span id="bf-email-error" class="form-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="bf-phone" class="form-label">Phone Number</label>
-                <input
-                  type="tel"
-                  id="bf-phone"
-                  name="phone"
-                  class="form-input"
-                  placeholder="+1 (555) 000-1234"
-                  autocomplete="tel"
-                  aria-describedby="bf-phone-hint"
-                />
-                <span id="bf-phone-hint" class="form-hint">Optional â for same-day communication</span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="bf-tour" class="form-label">Select Tour <span class="required" aria-hidden="true">*</span></label>
-                <select
-                  id="bf-tour"
-                  name="tour"
-                  class="form-input form-select"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-tour-error"
-                >
-                  <option value="" disabled selected>Choose a tourâ¦</option>
-                  <option value="sunrise">Sunrise Lake Tour â $49/person</option>
-                  <option value="canyon">Canyon Rapids Expedition â $129/person</option>
-                  <option value="coastal">Coastal Sea Kayaking â $89/person</option>
-                  <option value="moonlight">Full Moon Night Paddle â $79/person</option>
-                  <option value="private">Private / Corporate Group</option>
-                </select>
-                <span id="bf-tour-error" class="form-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="bf-guests" class="form-label">Number of Guests <span class="required" aria-hidden="true">*</span></label>
-                <select
-                  id="bf-guests"
-                  name="guests"
-                  class="form-input form-select"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-guests-error"
-                >
-                  <option value="" disabled selected>How many?</option>
-                  <option value="1">1 guest</option>
-                  <option value="2">2 guests</option>
-                  <option value="3">3 guests</option>
-                  <option value="4">4 guests</option>
-                  <option value="5">5 guests</option>
-                  <option value="6">6 guests</option>
-                  <option value="7">7 guests</option>
-                  <option value="8">8 guests</option>
-                  <option value="9+">9+ guests (we'll call you)</option>
-                </select>
-                <span id="bf-guests-error" class="form-error" role="alert" aria-live="polite"></span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="bf-date" class="form-label">Preferred Date <span class="required" aria-hidden="true">*</span></label>
-                <input
-                  type="date"
-                  id="bf-date"
-                  name="date"
-                  class="form-input"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-date-error"
-                />
-                <span id="bf-date-error" class="form-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="bf-experience" class="form-label">Experience Level</label>
-                <select id="bf-experience" name="experience" class="form-input form-select">
-                  <option value="" disabled selected>Select levelâ¦</option>
-                  <option value="none">No experience</option>
-                  <option value="beginner">Beginner (1â2 times)</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced / Expert</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="bf-message" class="form-label">Additional Notes</label>
-              <textarea
-                id="bf-message"
-                name="message"
-                class="form-input form-textarea"
-                rows="4"
-                placeholder="Dietary requirements, accessibility needs, special requestsâ¦"
-                aria-describedby="bf-message-hint"
-              ></textarea>
-              <span id="bf-message-hint" class="form-hint">Max 500 characters</span>
-            </div>
-
-            <div class="form-group form-checkbox-group">
-              <label class="checkbox-label">
-                <input
-                  type="checkbox"
-                  id="bf-terms"
-                  name="terms"
-                  class="checkbox-input"
-                  required
-                  aria-required="true"
-                  aria-describedby="bf-terms-error"
-                />
-                <span class="checkbox-custom" aria-hidden="true"></span>
-                I agree to the <a href="#" class="link">Terms & Conditions</a> and <a href="#" class="link">Cancellation Policy</a>
-              </label>
-              <span id="bf-terms-error" class="form-error" role="alert" aria-live="polite"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg btn-full">
-              Request Booking
+            <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-
-            <div id="bf-success" class="form-success" role="alert" aria-live="polite" hidden>
-              ð Booking request received! We'll confirm your spot within 2 hours.
-            </div>
-
-          </form>
-        </div>
-
-        <!-- Contact info + map -->
-        <div class="contact-info-col">
-          <div class="contact-details">
-            <h3 class="contact-details-title">Find Us</h3>
-
-            <ul class="contact-list" aria-label="Contact information">
-              <li class="contact-item">
-                <span class="contact-icon" aria-hidden="true">ð</span>
-                <div>
-                  <strong>Launch Point</strong>
-                  <address>142 Waterfront Drive<br />Harborview, CA 94901</address>
-                </div>
-              </li>
-              <li class="contact-item">
-                <span class="contact-icon" aria-hidden="true">ð</span>
-                <div>
-                  <strong>Phone</strong>
-                  <a href="tel:+15550001234" class="contact-link">+1 (555) 000-1234</a>
-                </div>
-              </li>
-              <li class="contact-item">
-                <span class="contact-icon" aria-hidden="true">âï¸</span>
-                <div>
-                  <strong>Email</strong>
-                  <a href="mailto:hello@wildwaterkayaking.com" class="contact-link">hello@wildwaterkayaking.com</a>
-                </div>
-              </li>
-              <li class="contact-item">
-                <span class="contact-icon" aria-hidden="true">ð</span>
-                <div>
-                  <strong>Hours</strong>
-                  <span>Daily 7:00 AM â 7:00 PM<br />Tours run April â October</span>
-                </div>
-              </li>
+            <ul class="nav-links">
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#booking" class="nav-cta">Book Now</a></li>
             </ul>
-          </div>
+        </div>
+    </nav>
 
-          <!-- Google Maps embed -->
-          <div class="map-wrap">
-            <iframe
-              title="WildWater Kayaking location on Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d-122.41941548468143!3d37.77492977975853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b8b9e895%3A0xa1ed7f59b1fc3c3a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1614000000000!5m2!1sen!2sus"
-              width="100%"
-              height="300"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              aria-label="Map showing WildWater Kayaking launch point location"
-            ></iframe>
-          </div>
-
-          <!-- Social links -->
-          <div class="social-links">
-            <h3 class="social-title">Follow Our Adventures</h3>
-            <div class="social-icons" role="list">
-              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on Instagram" rel="noopener noreferrer">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-              </a>
-              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on Facebook" rel="noopener noreferrer">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </a>
-              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on YouTube" rel="noopener noreferrer">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.
-DEPS: none
-RUN: open index.html
-
-```html
-<!-- filename: index.html (final part) -->
-377 0 00-2.122 2.136C1.505 8.205 1.505 12 1.505 12s0 3.795.371 5.814a3.016 3.016 0 002.122 2.136c1.954.545 9.002.545 9.002.545s7.505 0 9.502-.545a3.016 3.016 0 002.122-2.136C24.505 15.795 24.505 12 24.505 12s-.007-3.795-.507-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              </a>
-              <a href="#" class="social-icon" role="listitem" aria-label="Follow WildWater on TikTok" rel="noopener noreferrer">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-              </a>
-            </div>
-          </div>
-        </div><!-- end .contact-info-col -->
-      </div><!-- end .contact-grid -->
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience Nature's Waterways</h1>
+            <p>Guided kayaking tours for all skill levels. From serene lakes to thrilling rapids.</p>
+            <a href="#booking" class="btn btn-primary">Start Your Adventure</a>
+        </div>
     </section>
 
-  </main>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Tours Section -->
+        <section id="tours" class="tours-section">
+            <div class="container">
+                <h2>Featured Tours</h2>
+                <div class="tours-grid">
+                    <!-- Tour Card 1 -->
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%230369A1' width='400' height='300'/%3E%3Ctext x='50%' y='50%' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle'%3EMountain Lake%3C/text%3E%3C/svg%3E" alt="Mountain Lake tour - serene alpine waters surrounded by peaks">
+                        </div>
+                        <div class="tour-info">
+                            <h3>Mountain Lake Adventure</h3>
+                            <p class="difficulty">Beginner-Friendly</p>
+                            <p class="description">Paddle through pristine alpine waters with stunning mountain views. Perfect for first-time kayakers.</p>
+                            <div class="tour-meta">
+                                <span class="duration">4 hours</span>
+                                <span class="price">$79</span>
+                            </div>
+                            <button class="btn btn-secondary" aria-label="Select Mountain Lake Adventure tour">Select Tour</button>
+                        </div>
+                    </article>
 
-  <!-- Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢ FOOTER Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢Ã¢ -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="logo logo--light" aria-label="WildWater Kayaking Ã¢ back to top">
-          <span class="logo-icon" aria-hidden="true">Ã°Â¶</span>
-          <span class="logo-text">WildWater</span>
-        </a>
-        <p class="footer-tagline">Making waves since 2009. Your adventure starts here.</p>
-      </div>
+                    <!-- Tour Card 2 -->
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23EA580C' width='400' height='300'/%3E%3Ctext x='50%' y='50%' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle'%3ECoastal Sunset%3C/text%3E%3C/svg%3E" alt="Coastal Sunset tour - ocean kayaking during golden hour">
+                        </div>
+                        <div class="tour-info">
+                            <h3>Coastal Sunset Paddle</h3>
+                            <p class="difficulty">Intermediate</p>
+                            <p class="description">Experience the beauty of ocean kayaking as the sun dips below the horizon. Includes wildlife viewing.</p>
+                            <div class="tour-meta">
+                                <span class="duration">3 hours</span>
+                                <span class="price">$89</span>
+                            </div>
+                            <button class="btn btn-secondary" aria-label="Select Coastal Sunset Paddle tour">Select Tour</button>
+                        </div>
+                    </article>
 
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <h3 class="footer-nav-title">Explore</h3>
-        <ul role="list">
-          <li><a href="#experiences" class="footer-link">Experiences</a></li>
-          <li><a href="#about" class="footer-link">About Us</a></li>
-          <li><a href="#testimonials" class="footer-link">Reviews</a></li>
-          <li><a href="#faq" class="footer-link">FAQ</a></li>
-        </ul>
-      </nav>
+                    <!-- Tour Card 3 -->
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231F2937' width='400' height='300'/%3E%3Ctext x='50%' y='50%' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle'%3ERiver Rapids%3C/text%3E%3C/svg%3E" alt="River Rapids tour - whitewater kayaking adventure">
+                        </div>
+                        <div class="tour-info">
+                            <h3>Wild River Rapids</h3>
+                            <p class="difficulty">Advanced</p>
+                            <p class="description">Challenge yourself on Class III rapids. For experienced paddlers seeking an adrenaline rush.</p>
+                            <div class="tour-meta">
+                                <span class="duration">5 hours</span>
+                                <span class="price">$129</span>
+                            </div>
+                            <button class="btn btn-secondary" aria-label="Select Wild River Rapids tour">Select Tour</button>
+                        </div>
+                    </article>
 
-      <nav class="footer-nav" aria-label="Booking navigation">
-        <h3 class="footer-nav-title">Book</h3>
-        <ul role="list">
-          <li><a href="#booking" class="footer-link">Reserve a Tour</a></li>
-          <li><a href="#contact" class="footer-link">Contact Us</a></li>
-          <li><a href="#" class="footer-link">Gift Vouchers</a></li>
-          <li><a href="#" class="footer-link">Group Bookings</a></li>
-        </ul>
-      </nav>
+                    <!-- Tour Card 4 -->
+                    <article class="tour-card">
+                        <div class="tour-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%236B7280' width='400' height='300'/%3E%3Ctext x='50%' y='50%' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle'%3EMangrove Explorer%3C/text%3E%3C/svg%3E" alt="Mangrove Explorer tour - ecological paddle through coastal wetlands">
+                        </div>
+                        <div class="tour-info">
+                            <h3>Mangrove Explorer</h3>
+                            <p class="difficulty">Beginner-Friendly</p>
+                            <p class="description">Explore coastal wetlands and encounter unique wildlife. Learn about ecosystem conservation.</p>
+                            <div class="tour-meta">
+                                <span class="duration">2.5 hours</span>
+                                <span class="price">$59</span>
+                            </div>
+                            <button class="btn btn-secondary" aria-label="Select Mangrove Explorer tour">Select Tour</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-      <div class="footer-legal-col">
-        <h3 class="footer-nav-title">Legal</h3>
-        <ul role="list">
-          <li><a href="#" class="footer-link">Privacy Policy</a></li>
-          <li><a href="#" class="footer-link">Terms & Conditions</a></li>
-          <li><a href="#" class="footer-link">Accessibility</a></li>
-        </ul>
-      </div>
-    </div>
+        <!-- About Section with Stats -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Why Choose AdventureFlow</h2>
+                <p class="section-intro">We've been creating unforgettable kayaking experiences for over 15 years.</p>
+                <div class="stats-bar">
+                    <div class="stat">
+                        <h3>5000+</h3>
+                        <p>Happy Paddlers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Tours Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>Our certified guides prioritize safety and fun. All equipment is regularly maintained, and we offer tours for every skill level. Join us for an adventure you'll never forget!</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p class="footer-copy">&copy; 2024 WildWater Kayaking. All rights reserved.</p>
-        <p class="footer-credit">Designed with Ã°for the water.</p>
-      </div>
-    </div>
-  </footer>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>What Our Guests Say</h2>
+                <div class="testimonials-grid">
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+                        <p class="quote">"Best kayaking experience of my life! The guides were knowledgeable and made everyone feel welcome."</p>
+                        <p class="author">- Sarah Mitchell</p>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+                        <p class="quote">"Perfect for our family vacation. The kids loved it and felt completely safe the entire time."</p>
+                        <p class="author">- James Chen</p>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+                        <p class="quote">"Incredible sunset views and great instruction. Highly recommend for all skill levels."</p>
+                        <p class="author">- Emma Rodriguez</p>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+                        <p class="quote">"The advanced rapids tour was thrilling! Professional guides made it both safe and unforgettable."</p>
+                        <p class="author">- Michael Torres</p>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+                        <p class="quote">"Wonderful experience exploring the mangroves. Learned so much about the local ecosystem."</p>
+                        <p class="author">- Lisa Anderson</p>
+                    </article>
+                    <article class="testimonial">
+                        <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+                        <p class="quote">"Best way to spend a morning. The guides were patient with beginners and made it fun for everyone."</p>
+                        <p class="author">- David Kumar</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <script src="app.js"></script>
-</body>
-</html>
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <h2>Get Adventure Tips & Exclusive Offers</h2>
+                <p>Join 10,000+ kayakers who receive weekly tips and exclusive discounts.</p>
+                <form class="newsletter-form" aria-label="Newsletter signup">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        required 
+                        aria-label="Email address"
+                    >
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-accordion" role="region" aria-label="Frequently asked questions">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span>Do I need prior kayaking experience?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer" hidden>
+                            <p>No! We offer tours for all skill levels, from complete beginners to advanced paddlers. Our instructors provide safety training before each tour.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span>What's included in the tour price?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer" hidden>
+                            <p>All tours include a kayak, paddle, personal flotation device (PFD), professional guide, and safety instruction. Some tours include snacks and water.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span>What should I bring?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer" hidden>
+                            <p>Bring water, sunscreen, a towel, and wear comfortable clothing. We recommend water shoes or sandals. A change of clothes is helpful after the tour.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span>Are there age restrictions?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer" hidden>
+                            <p>Children as young as 5 can participate in beginner tours with a parent or guardian. Some advanced tours require participants to be 16+.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                            <span>What's your cancellation policy?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-5" class="faq-answer" hidden>
+                            <p>Cancel up to 48 hours before your tour for a full refund. Cancellations within 48 hours are non-refundable but can be rescheduled.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                            <span>What if the weather is bad?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
