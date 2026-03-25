@@ -287,3 +287,379 @@
 
           <article class="testimonial-card" role="listitem">
             <div class="stars" aria-label="5 out of
+DEPS: none
+RUN: open index.html
+
+```html
+<!-- filename: index.html (continued) -->
+            5 stars">âââââ</div>
+            <blockquote class="testimonial-quote">
+              <p>"The Canyon Rapids Expedition was the most thrilling experience of my life. Our guide Jake was incredible â professional, funny, and made us feel safe the entire time. Already booked again for next summer!"</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/64?img=11"
+                alt="Portrait of Sarah M."
+                class="testimonial-avatar"
+                width="48" height="48"
+                loading="lazy"
+              />
+              <div>
+                <strong class="testimonial-name">Sarah M.</strong>
+                <span class="testimonial-location">Portland, OR</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+            <blockquote class="testimonial-quote">
+              <p>"Brought my 10-year-old on the Sunrise Lake Tour and it was perfect. Patient guides, gorgeous scenery, and my kid hasn't stopped talking about it. Worth every penny."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/64?img=32"
+                alt="Portrait of Marcus T."
+                class="testimonial-avatar"
+                width="48" height="48"
+                loading="lazy"
+              />
+              <div>
+                <strong class="testimonial-name">Marcus T.</strong>
+                <span class="testimonial-location">Seattle, WA</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+            <blockquote class="testimonial-quote">
+              <p>"The Full Moon Night Paddle was absolutely magical. Bioluminescent water glowing around my paddle â I honestly thought I was dreaming. Book this. Just do it."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/64?img=47"
+                alt="Portrait of Priya K."
+                class="testimonial-avatar"
+                width="48" height="48"
+                loading="lazy"
+              />
+              <div>
+                <strong class="testimonial-name">Priya K.</strong>
+                <span class="testimonial-location">San Francisco, CA</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+            <blockquote class="testimonial-quote">
+              <p>"Coastal Sea Kayaking exceeded every expectation. We paddled through sea caves, spotted seals, and had a beachside lunch. The WildWater team clearly loves what they do."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/64?img=59"
+                alt="Portrait of Daniel R."
+                class="testimonial-avatar"
+                width="48" height="48"
+                loading="lazy"
+              />
+              <div>
+                <strong class="testimonial-name">Daniel R.</strong>
+                <span class="testimonial-location">Austin, TX</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+            <blockquote class="testimonial-quote">
+              <p>"I was nervous as a complete beginner but the guides were so encouraging. By the end of the Sunrise Tour I felt like a pro. Fantastic organisation, great safety briefing."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/64?img=25"
+                alt="Portrait of Elena W."
+                class="testimonial-avatar"
+                width="48" height="48"
+                loading="lazy"
+              />
+              <div>
+                <strong class="testimonial-name">Elena W.</strong>
+                <span class="testimonial-location">Chicago, IL</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="stars" aria-label="5 out of 5 stars">âââââ</div>
+            <blockquote class="testimonial-quote">
+              <p>"Corporate team-building done right. Booked the Coastal tour for 16 colleagues and WildWater handled everything flawlessly. Everyone left energised and bonded. Highly recommend."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/64?img=68"
+                alt="Portrait of James O."
+                class="testimonial-avatar"
+                width="48" height="48"
+                loading="lazy"
+              />
+              <div>
+                <strong class="testimonial-name">James O.</strong>
+                <span class="testimonial-location">New York, NY</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- âââââââââââââââââââ NEWSLETTER âââââââââââââââââââ -->
+    <section class="section newsletter" aria-labelledby="newsletter-heading">
+      <div class="container newsletter-inner">
+        <div class="newsletter-text">
+          <span class="section-label">Stay in the Loop</span>
+          <h2 id="newsletter-heading" class="section-title">Get Deals & Paddle News</h2>
+          <p>Early-bird discounts, new route announcements, and seasonal offers â straight to your inbox. No spam, ever.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate aria-label="Newsletter sign-up form">
+          <div class="newsletter-fields">
+            <div class="form-group">
+              <label for="nl-email" class="form-label">Email address</label>
+              <input
+                type="email"
+                id="nl-email"
+                name="email"
+                class="form-input"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="nl-email-error"
+              />
+              <span id="nl-email-error" class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg newsletter-btn">Subscribe</button>
+          </div>
+          <p class="newsletter-privacy">
+            <small>We respect your privacy. Unsubscribe at any time.</small>
+          </p>
+          <div id="nl-success" class="form-success" role="alert" aria-live="polite" hidden>
+            ð You're on the list! Watch your inbox for exclusive deals.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- âââââââââââââââââââ FAQ âââââââââââââââââââ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container faq-container">
+        <div class="section-header">
+          <span class="section-label">Got Questions?</span>
+          <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq1-panel"
+                id="faq1-btn"
+              >
+                Do I need kayaking experience to join a tour?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq1-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq1-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>Not at all! Our Sunrise Lake Tour and Coastal Sea Kayaking are perfectly suited for first-timers. Every tour begins with a comprehensive on-shore safety briefing and paddling technique demonstration. Our guides will have you feeling confident on the water within minutes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq2-panel"
+                id="faq2-btn"
+              >
+                What should I wear and bring?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq2-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq2-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>Wear quick-dry clothing and water shoes or sandals with straps. Bring sunscreen, sunglasses with a retainer strap, a water bottle, and a light snack. We provide all paddling equipment â kayak, paddle, PFD (life jacket), and a dry bag for your valuables. Avoid cotton clothing as it stays wet and cold.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq3-panel"
+                id="faq3-btn"
+              >
+                What is your cancellation policy?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq3-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq3-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>We offer a <strong>full refund</strong> for cancellations made 48+ hours before your tour departure. Cancellations within 24â48 hours receive a 50% credit toward a future booking. No-shows and cancellations under 24 hours are non-refundable. We will always reschedule at no charge if we cancel due to unsafe weather conditions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq4-panel"
+                id="faq4-btn"
+              >
+                Are children allowed on tours?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq4-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq4-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>Children aged 6 and up are welcome on the Sunrise Lake Tour in tandem kayaks with a parent or guardian. The Coastal Sea Kayaking tour is suitable for ages 12 and up. The Canyon Rapids Expedition requires participants to be 16+ and have prior kayaking experience. All children must have a signed parental consent form.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq5-panel"
+                id="faq5-btn"
+              >
+                What happens if the weather is bad?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq5-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq5-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>Safety is our top priority. Our guides monitor weather conditions closely up to 48 hours before each tour. Light rain rarely stops us â paddling in drizzle can be magical! However, if we deem conditions unsafe (high winds, lightning, dangerous water levels), we will cancel and offer you a full refund or a free reschedule to any available date.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq6-panel"
+                id="faq6-btn"
+              >
+                How many people are in each tour group?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq6-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq6-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>We keep group sizes intentionally small for a better experience and higher safety standards. Most tours have a maximum of 8â10 guests per guide. Private and semi-private tours are also available for couples, families, or corporate groups â contact us for custom pricing and availability.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq7-panel"
+                id="faq7-btn"
+              >
+                Do you offer private or corporate group tours?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq7-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq7-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>Absolutely! We specialise in private bookings for birthdays, bachelorette parties, corporate team-building events, and school groups. Private tours can be fully customised â route, duration, catering, and photography add-ons are all available. Reach out via our contact form or call us to discuss your requirements.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-btn"
+                aria-expanded="false"
+                aria-controls="faq8-panel"
+                id="faq8-btn"
+              >
+                Where do tours depart from?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div
+              id="faq8-panel"
+              class="accordion-panel"
+              role="region"
+              aria-labelledby="faq8-btn"
+              hidden
+            >
+              <div class="accordion-body">
+                <p>All tours depart from our main launch point at <strong>Harborview Kayak Center, 142 Waterfront Drive</strong>. Free parking is available on-site. We recommend arriving 20 minutes before your scheduled tour time to complete check-in and the safety briefing. The address is pinned on the map below.</p>
+              </div>
+            </div>
+          </div>
+
+        
