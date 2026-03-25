@@ -271,3 +271,268 @@
                             <span>What if the weather is bad?</span>
                             <span class="faq-icon" aria-hidden="true">+</span>
                         </button>
+```html
+                        <div id="faq-answer-6" class="faq-answer" hidden>
+                            <p>Safety is our priority. Tours may be rescheduled or cancelled due to severe weather. We'll notify you 24 hours in advance if needed.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                            <span>Do you offer group discounts?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer" hidden>
+                            <p>Yes! Groups of 8+ receive a 15% discount. Contact us for corporate team-building packages and custom tour arrangements.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 8 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                            <span>Are your guides certified?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-8" class="faq-answer" hidden>
+                            <p>All our guides are certified by the American Kayaking Association and trained in first aid and water safety. Your safety is our top priority.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <h2>Book Your Adventure</h2>
+                <form class="booking-form" aria-label="Tour booking form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="full-name" 
+                                name="full-name" 
+                                required 
+                                aria-required="true"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                aria-required="true"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                required 
+                                aria-required="true"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input 
+                                type="date" 
+                                id="date" 
+                                name="date" 
+                                required 
+                                aria-required="true"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tour-select">Select Tour *</label>
+                            <select 
+                                id="tour-select" 
+                                name="tour" 
+                                required 
+                                aria-required="true"
+                            >
+                                <option value="">-- Choose a tour --</option>
+                                <option value="mountain-lake">Mountain Lake Adventure ($79)</option>
+                                <option value="coastal-sunset">Coastal Sunset Paddle ($89)</option>
+                                <option value="river-rapids">Wild River Rapids ($129)</option>
+                                <option value="mangrove">Mangrove Explorer ($59)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="participants">Number of Participants *</label>
+                            <input 
+                                type="number" 
+                                id="participants" 
+                                name="participants" 
+                                min="1" 
+                                max="12" 
+                                value="1" 
+                                required 
+                                aria-required="true"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="experience">Kayaking Experience Level *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input 
+                                    type="radio" 
+                                    id="beginner" 
+                                    name="experience" 
+                                    value="beginner" 
+                                    required
+                                >
+                                <label for="beginner">Beginner</label>
+                            </div>
+                            <div class="radio-option">
+                                <input 
+                                    type="radio" 
+                                    id="intermediate" 
+                                    name="experience" 
+                                    value="intermediate"
+                                >
+                                <label for="intermediate">Intermediate</label>
+                            </div>
+                            <div class="radio-option">
+                                <input 
+                                    type="radio" 
+                                    id="advanced" 
+                                    name="experience" 
+                                    value="advanced"
+                                >
+                                <label for="advanced">Advanced</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="special-requests">Special Requests or Comments</label>
+                        <textarea 
+                            id="special-requests" 
+                            name="special-requests" 
+                            rows="4" 
+                            placeholder="Any dietary restrictions, accessibility needs, or questions?"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="terms" 
+                            name="terms" 
+                            required 
+                            aria-required="true"
+                        >
+                        <label for="terms">I agree to the terms and conditions *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
+                    <p class="form-note">We'll confirm your booking within 24 hours.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact & Map Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2>Visit Our Office</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <a href="tel:+1-555-0123">(555) 012-3456</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:info@adventureflow.com">info@adventureflow.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <p>123 Riverfront Drive<br>
+                               Waterside, CA 90210</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Hours:</strong>
+                            <p>Monday - Sunday: 7:00 AM - 6:00 PM<br>
+                               Closed on major holidays</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Follow us on Facebook">f</a>
+                            <a href="#" aria-label="Follow us on Instagram">ð·</a>
+                            <a href="#" aria-label="Follow us on Twitter">ð</a>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.621050396396!2d-118.24356!3d34.05223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27d449%3A0x1500!2sRiverside%20Park!5e0!3m2!1sen!2sus!4v1234567890" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="AdventureFlow Kayaking location map"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AdventureFlow</h4>
+                    <p>Your trusted partner for unforgettable kayaking adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Safety Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AdventureFlow Kayaking. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
